@@ -5,7 +5,7 @@ import { HiOutlineSearchCircle } from "react-icons/hi";
 
 export default function Subscriber() {
   return (
-    <main className="flex flex-col gap-2 bg-white p-5 text-black dark:bg-slate-800 dark:text-white ">
+    <main className="fixed flex size-full flex-col gap-2 bg-white p-5 text-black dark:bg-slate-800 dark:text-white">
       <div className="flex flex-row justify-end">
         <Button className="bg-white text-black dark:bg-slate-800 dark:text-white">
           <Link to="/navigation">X</Link>
