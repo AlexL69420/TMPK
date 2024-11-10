@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import Header from "./components/Header";
 import MainContent from "./components/MainContent";
-import Options from "./components/NavComponents/Options";
+import Options from "./components/Pages/Options";
 import SideBar from "./components/Sidebar";
 import { ThisFooter } from "./components/Footer";
 import { FormClient } from "./components/Form/FormClient";
@@ -45,13 +45,12 @@ function App() {
         onOptionsClick={handleOptionsOpen}
       />
       {isFormVisible && <FormClient onClose={handleFormClose} />}
-      {isOptionsVisible && <Options onClose={handleOptionsClose} />}
+
       <div className="flex  flex-col items-start gap-2 dark:bg-gray-800">
         {isNavigationVisible && (
           <SideBar
             onClose={handleNavigationClose}
             onSignInClick={handleFormOpen}
-            onOptionsClick={handleOptionsOpen}
           />
         )}
 
