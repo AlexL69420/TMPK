@@ -18,10 +18,10 @@ export default function SideBar({
   onOptionsClick,
 }: SidebarProps) {
   return (
-    <Sidebar aria-label="Default sidebar example">
-      <div className="flex flex-row items-center justify-between">
-        <h1 className="font-bold">Navigation</h1>
-        <Button onClick={onClose}>X</Button>
+    <Sidebar aria-label="Default sidebar example" className={'border-2 border-gray-600'}>
+      <div className="flex flex-row items-center justify-between bg-tmpk-gray dark:bg-slate-800">
+        <h1 className="font-bold dark:text-white">Navigation</h1>
+        <Button className='text-black dark:text-white bg-tmpk-gray dark:bg-tmpk-blue' onClick={onClose}>X</Button>
       </div>
       <Sidebar.Items>
         <Sidebar.ItemGroup>

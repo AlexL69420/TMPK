@@ -10,22 +10,22 @@ interface FormProps {
 export function FormClient({ onClose }: FormProps) {
   return (
     <div className="form-overlay">
-      <form className="flex w-4/5 max-w-md flex-col gap-4 rounded-2xl bg-teal-500 p-5 dark:bg-cyan-900">
+      <form className="flex min-w-72 lg:w-96 max-w-md flex-col gap-4 rounded-2xl p-5">
         <div className="flex justify-between">
           <h1 className="dark:text-white">Registration Form</h1>
-          <Button className="flex w-8 justify-end" onClick={onClose}>
-            x
+          <Button className="flex w-8 dark:text-white text-center" onClick={onClose}>
+            X
           </Button>
         </div>
 
         <div>
           <div className="mb-2 block">
-            <Label htmlFor="email1" value="Your email" />
+            <Label htmlFor="email1" value="Your login" />
           </div>
           <TextInput
             id="email1"
-            type="email"
-            placeholder="name@flowbite.com"
+            type=""
+            placeholder="login"
             required
           />
         </div>
