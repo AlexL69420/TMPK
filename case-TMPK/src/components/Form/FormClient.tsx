@@ -7,10 +7,10 @@ import "./FormClient.css";
 export function FormClient() {
   return (
     <div className="form-overlay">
-      <form className="flex min-w-72 max-w-md flex-col gap-4 rounded-2xl bg-white p-5 lg:w-96">
+      <form className="flex min-w-72 max-w-md flex-col gap-4 rounded-2xl  bg-white p-5 p-5 text-black dark:bg-slate-800 dark:text-white lg:w-96">
         <div className="flex justify-between">
-          <h1 className="dark:text-white">Registration Form</h1>
-          <Button className="flex w-8 text-center dark:text-white">
+          <h1 className="dark:text-white ">Registration Form</h1>
+          <Button className="flex w-8 bg-blue-500 text-center  dark:bg-slate-500  dark:text-white">
             <Link to="/navigation">X</Link>
           </Button>
         </div>
@@ -31,7 +31,9 @@ export function FormClient() {
           <Checkbox id="remember" />
           <Label htmlFor="remember">Remember me</Label>
         </div>
-        <Button type="submit">Submit</Button>
+        <Button type="submit" className=" bg-blue-500  dark:bg-slate-500">
+          Submit
+        </Button>
       </form>
     </div>
   );

@@ -27,7 +27,10 @@ export default function Options() {
             </div>
             <TextInput id="password1" type="password" required />
           </div>
-          <Button className="bg-tmpk-blue dark:bg-tmpk-blue my-4" type="submit">
+          <Button
+            className="bg-tmpk-blue dark:bg-tmpk-blue my-4  bg-blue-500  dark:bg-slate-500"
+            type="submit"
+          >
             Change
           </Button>
         </div>

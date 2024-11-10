@@ -16,7 +16,7 @@ export default function Address() {
           <div className="mb-2 block">
             <Label
               htmlFor="contractID"
-              value="Введите ID договора IP или MAC-address в поле для ввода текста"
+              value="Введите адрес абонента в поле для ввода текста"
             />
           </div>
           <div className="flex flex-row  items-center gap-2">
@@ -31,6 +31,25 @@ export default function Address() {
             </Button>
           </div>
         </div>
+
+        <div className="gap-2 border-2 border-gray-600">
+          <div className="flex flex-row gap-2">
+            <h1>Номер договора:</h1>
+            <h1 id="clientContractID"></h1>
+          </div>
+          <div className="flex flex-row gap-2">
+            <h1>ФИО абонента:</h1>
+            <h1 id="clientFullname"></h1>
+          </div>
+          <div className="flex flex-row gap-2">
+            <h1>адрес:</h1>
+            <h1 id="clientStatus"></h1>
+          </div>
+        </div>
+
+        <Button className="bg-blue-500 text-black dark:bg-slate-500 dark:text-white">
+          Подтвердить
+        </Button>
 
         <div className="gap-2 border-2 border-gray-600">
           <div className="flex flex-row gap-2">
