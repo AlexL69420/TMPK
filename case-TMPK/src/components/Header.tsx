@@ -12,7 +12,7 @@ interface ButtonProps {
 
 export default function Header({ onNavigationClick }: ButtonProps) {
   return (
-    <main className="bg-tmpk-blue flex h-16 w-full items-center justify-between gap-2 bg-blue-700 dark:bg-slate-700">
+    <main className="bg-tmpk-blue flex h-16 w-full items-center justify-between gap-2 bg-blue-700 dark:bg-slate-800">
       <div className="flex h-12 flex-wrap items-center gap-1">
         <Avatar
           className={"w-12"}
